@@ -30,6 +30,8 @@ import { mentorModule } from './modules/mentor-module/mentor.module';
     FooterComponent,
     LoginComponent,
     
+    
+    
   ],
   imports: [
     BrowserModule,
