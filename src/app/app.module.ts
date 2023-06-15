@@ -15,21 +15,10 @@ import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './modules/auth-module/login/login.component';
-import { MentorsComponent } from './modules/admin-module/mentors/mentors.component';
-import { MenteesComponent } from './modules/admin-module/mentees/mentees.component';
-import { ApplicationsComponent } from './modules/admin-module/applications/applications.component';
-import { ReportsComponent } from './modules/admin-module/reports/reports.component';
-import { DashboardComponent } from './modules/mentee-module/dashboard/dashboard.component';
-import { AddServiceComponent } from './modules/mentee-module/add-service/add-service.component';
-import { MyBalanceComponent } from './modules/mentee-module/my-balance/my-balance.component';
-import { EditProfileComponent } from './modules/mentee-module/edit-profile/edit-profile.component';
-import { UpcomingSessionsComponent } from './modules/mentee-module/upcoming-sessions/upcoming-sessions.component';
-import { ChatComponent } from './modules/mentee-module/chat/chat.component';
-import { SearchMentorsComponent } from './modules/mentor-module/search-mentors/search-mentors.component';
-import { SubscriptionComponent } from './modules/mentor-module/subscription/subscription.component';
-import { EditProfileMentorComponent } from './modules/mentor-module/edit-profile-mentor/edit-profile-mentor.component';
-import { UpcomingSessionsMentorComponent } from './modules/mentor-module/upcoming-sessions-mentor/upcoming-sessions-mentor.component';
-import { ProfileMentorComponent } from './modules/mentor-module/profile-mentor/profile-mentor.component';
+
+import { adminModule } from './modules/admin-module/admin.module';
+import { menteeModule } from './modules/mentee-module/mentee.module';
+import { mentorModule } from './modules/mentor-module/mentor.module';
 
 @NgModule({
   declarations: [
@@ -40,21 +29,7 @@ import { ProfileMentorComponent } from './modules/mentor-module/profile-mentor/p
     NavbarComponent,
     FooterComponent,
     LoginComponent,
-    MentorsComponent,
-    MenteesComponent,
-    ApplicationsComponent,
-    ReportsComponent,
-    DashboardComponent,
-    AddServiceComponent,
-    MyBalanceComponent,
-    EditProfileComponent,
-    UpcomingSessionsComponent,
-    ChatComponent,
-    SearchMentorsComponent,
-    SubscriptionComponent,
-    EditProfileMentorComponent,
-    UpcomingSessionsMentorComponent,
-    ProfileMentorComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -62,7 +37,10 @@ import { ProfileMentorComponent } from './modules/mentor-module/profile-mentor/p
     FormsModule,
     RouterModule,
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    adminModule,
+    menteeModule,
+    mentorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
