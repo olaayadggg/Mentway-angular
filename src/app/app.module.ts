@@ -19,6 +19,7 @@ import { LoginComponent } from './modules/auth-module/login/login.component';
 import { adminModule } from './modules/admin-module/admin.module';
 import { menteeModule } from './modules/mentee-module/mentee.module';
 import { mentorModule } from './modules/mentor-module/mentor.module';
+import { SessionComponent } from './modules/session-module/components/session/session.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { mentorModule } from './modules/mentor-module/mentor.module';
     NavbarComponent,
     FooterComponent,
     LoginComponent,
+    SessionComponent,
     
     
     

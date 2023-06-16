@@ -1,7 +1,7 @@
-<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
+<nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent headroom headroom--top headroom--pinned">
   <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
-      <img src="./assets/img/brand/argon-white.png">
+    <a class="navbar-brand mr-lg-5 logo" [routerLink]="['/home']">
+      <img src="./assets/img/brand/logo.svg">
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-6 collapse-brand">
             <a [routerLink]="['/home']">
-              <img src="./assets/img/brand/blue.png">
+              <img src="./assets/img/brand/logo.svg">
             </a>
           </div>
           <div class="col-6 collapse-close">
@@ -30,7 +30,8 @@
             <i class="ni ni-ui-04 d-lg-none"></i>
             <span class="nav-link-inner--text">About us</span>
           </a>
-          <div class="dropdown-menu-xl dropdown-menu" >
+          
+          <!-- <div class="dropdown-menu-xl dropdown-menu" >
             <div class="dropdown-menu-inner">
               <a routerLinkActive="active" [routerLink]="['documentation/tutorial']" class="media d-flex align-items-center">
                 <div class="icon icon-shape bg-gradient-primary rounded-circle text-white">
@@ -60,23 +61,32 @@
                 </div>
               </a>
             </div>
-          </div>
+          </div> -->
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
             <span class="nav-link-inner--text">Contact</span>
           </a>
-          <div class="dropdown-menu">
+          <!-- <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
             <a [routerLink]="['/user-profile']" class="dropdown-item">Profile</a>
             <a [routerLink]="['/login']" class="dropdown-item">Login</a>
             <a [routerLink]="['/register']" class="dropdown-item">Register</a>
-          </div>
+          </div> -->
         </li>
       </ul>
-      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-        <li class="nav-item">
+      <div class="input-group col-md-5 ">
+        <input class="form-control py-2 search" type="search" placeholder="search" id="example-search-input">
+        <span class="input-group-append">
+          <button class="btn search " type="button">
+              <i class="fa fa-search"></i>
+          </button>
+        </span>
+      </div>
+      
+      <ul  class="navbar-nav align-items-lg-center ml-lg-auto">
+        <!-- <li class="nav-item">
           <a class="nav-link nav-link-icon" href="https://www.facebook.com/creativetim" target="_blank" data-toggle="tooltip" title="Like us on Facebook">
             <i class="fa fa-facebook-square"></i>
             <span class="nav-link-inner--text d-lg-none">Facebook</span>
@@ -99,16 +109,22 @@
             <i class="fa fa-github"></i>
             <span class="nav-link-inner--text d-lg-none">Github</span>
           </a>
-        </li>
+        </li> -->
         <li class="nav-item d-none d-lg-block ml-lg-4">
-          <a href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsa-navbar" target="_blank" class="btn btn-neutral btn-icon">
-            <span class="btn-inner--icon">
-              <i class="fa fa-cloud-download mr-2"></i>
-            </span>
+          <a [routerLink]="['/register']" target="_blank" class="btn btn-neutral register ">
             <span class="nav-link-inner--text">Create account</span>
           </a>
         </li>
+        <li class="nav-item d-none d-lg-block ml-lg-4">
+          <a [routerLink]="['/login']" target="_blank" class="btn login ">
+            <span class="nav-link-inner--text">Login</span>
+          </a>
+        </li>
       </ul>
+      <!-- <ul *ngIf="">
+        <p>name</p>
+        <img class="rounded-circle" src="" alt="">
+      </ul> -->
     </div>
   </div>
 </nav>
