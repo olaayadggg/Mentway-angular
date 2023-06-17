@@ -8,6 +8,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { SignupComponent } from './modules/auth-module/signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './modules/auth-module/login/login.component';
+import { SearchMentorsComponent } from './modules/mentor-module/components/search-mentors/search-mentors.component';
 
 const routes: Routes =[
     { path: 'home',             component: HomeComponent },
@@ -15,6 +16,7 @@ const routes: Routes =[
     { path: 'register',           component: SignupComponent },
     { path: 'landing',          component: LandingComponent },
     { path: 'login',          component: LoginComponent },
+    { path: 'search',          component: SearchMentorsComponent },
     { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 
