@@ -1,0 +1,90 @@
+.profile-container {
+    text-align: center;
+  }
+  
+  .profile-header {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .profile-info h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .profile-links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-links a {
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    margin-left: 0px !important; 
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .profile-links a:hover {
+    background-color: lightgreen;
+  }
+  
+  /* profile Booking */
+  .booking-summary {
+    text-align: left;
+    padding: 20px;
+    background-color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumbs {
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumbs a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .profile-image {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .profile-links a {
+      margin-left: 0;
+      padding: 5px 0;
+    }
+  
+    .booking-summary {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  .profile-page {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+  }
+  
