@@ -1,0 +1,194 @@
+.column {
+    padding-bottom: 0 !important;
+}
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+}
+.columns {
+    min-height: 100%;
+    margin-bottom: 0 !important;
+}
+
+.settings-list {
+    background: #F7F8FA;
+    height: 100%;
+    padding: 20px 5px;
+}
+aside.menu {
+    height: calc(90% - 35px);
+    height: 100%;
+    overflow-y: auto;
+}
+.menu {
+    font-size: 1rem;
+}
+article, aside, figure, footer, header, hr, pre code, section {
+    display: block;
+}
+.menu-list {
+    width: 90%;
+    margin: auto;
+}
+.menu-list {
+    line-height: 1.25;
+}
+ul {
+    list-style: none;
+    padding: 0px;
+}
+.menu-list li {
+    margin-bottom: 10px;
+}
+.menu-list li {
+    margin-bottom: 10px;
+    color: #172E59;
+    font-weight: 500;
+    padding: 2px 8px;
+}
+.menu-list a {
+    padding: 12px;
+    display: block;
+    color: #4a4a4a;
+    border-left: 3px solid transparent;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.menu-list a.is-active, .menu-list a:hover {
+    background: #ffff;
+    color: #4a4a4a;
+    font-weight: 500;
+}
+.menu-list a.is-active, .menu-list a:hover {
+    background: #ffff;
+    color: #172E59;
+    border-left: 3px solid #08C3A8;
+}
+
+.column.is-3 {
+    flex: none;
+    width: 25%
+}
+
+
+/* Refunds */
+.max-w-screen-md {
+    max-width: 768px!important;
+}
+.mt-8 {
+    margin-top: 2rem!important;
+}
+.box {
+    display: block;
+    border-radius: .75rem;
+    border-width: 1px;
+    border-style: solid;
+    --tw-border-opacity: 1;
+    border-color: rgb(203 213 225 / var(--tw-border-opacity));
+    padding: 1.25rem;
+}
+.bordered-card, .box {
+    box-shadow: none;
+    border: 2px solid #d0dce6;
+    border-radius: 5px;
+}
+.box, .button {
+    background-color: #fff;
+}
+.content h2 {
+    font-size: 1.75em;
+    margin-bottom: .5714em;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5 {
+    color: #363636;
+    font-weight: 400;
+    line-height: 1.125;
+}
+.content blockquote:not(:last-child), .content dl:not(:last-child), .content ol:not(:last-child), .content p:not(:last-child), .content pre:not(:last-child), .content table:not(:last-child), .content ul:not(:last-child) {
+    margin-bottom: 1em;
+}
+blockquote, body, dd, dl, dt, fieldset, figure, h1, h2, h3, h4, h5, hr, html, iframe, legend, li, ol, p, pre, textarea, ul {
+    margin: 0;
+    padding: 0;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.blue-btn {
+    background-color: var(--navy-800);
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
+    display: inline-block;
+    cursor: pointer;
+    border-radius: .375rem;
+    border-width: 0;
+    border-color: transparent;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    transition: var(--mc-transition-ease);
+}
+/* billing name form */
+.text-base {
+    font-size: 1rem!important;
+    line-height: 1.5rem!important;
+}
+.text-left {
+    text-align: left!important;
+}
+.w-full {
+    width: 100%!important;
+}
+.mb-2\.5 {
+    margin-bottom: .625rem!important;
+}
+.sm\:text-sm {
+    font-size: .875rem!important;
+    line-height: 1.25rem!important;
+}
+.shadow-sm {
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05)!important;
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color)!important;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)!important;
+}
+.border-gray-300 {
+    --tw-border-opacity: 1!important;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity))!important;
+}
+.rounded-md {
+    border-radius: .375rem!important;
+}
+.w-full {
+    width: 100%!important;
+}
+.block {
+    display: block!important;
+}
+.form-input, .form-multiselect, .form-select, .form-textarea {
+    /* -webkit-appearance: none; */
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    /* border-color: #6b7280; */
+    border-width: 1px;
+    /* border-radius: 0; */
+    border-style: solid;
+    padding-top: .5rem;
+    padding-right: .75rem;
+    padding-bottom: .5rem;
+    padding-left: .75rem;
+    /* font-size: 1rem; */
+    /* line-height: 1.5rem; */
+}
