@@ -1,1 +1,123 @@
-<p>my-balance works!</p>
+<div class="row" style="min-height: 100%;">
+    <div class="col-3 is-3" style="height: 100vh !important;" id="container">
+        <div class="columns" >
+            <div class="column">
+                <div class="settings-list" >
+                    <aside class="menu" >
+                        <ul class="menu-list" >
+                            <ul class="menu-list" >
+                                <li><a class="" routerLink="/user-profile">Profile</a></li>
+                                <li><a class="" href="/mysubscriptions">My subscriptions</a></li>
+                                <li><a class="is-active" href="/mybalance">Manage balance</a></li>
+                                <li><a class="" href="/user-profile">Invite a friend</a></li>
+                                <li><a class="" href="/user-profile">Password</a></li>
+                            </ul>
+                        </ul>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-7">
+        <div class="column" style="height: 100%;" id="settings-content">
+            <main class="max-w-4xl pb-10 lg:py-12 lg:px-8 content">
+                <h2 class="mb-8"><b>Manage your balance</b></h2>
+                <div>
+                    <dl class="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="box relative overflow-hidden col-span-1 h-fit">
+                            <dt>
+                            <div class="absolute bg-indigo-500 rounded-md p-3">
+                            
+                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                            </svg>
+                            </div>
+                            <p class="ml-16 text-sm font-medium text-gray-500 truncate">Balance available</p>
+                            </dt>
+                            <dd class="ml-16 pb-6 flex items-baseline sm:pb-7">
+                            <p class="text-2xl font-semibold text-gray-900">$0</p>
+                            <div class="absolute bottom-0 inset-x-0 bg-gray-50 px-4 py-4 sm:px-6">
+                            <div class="text-sm">
+                            <div onclick="if (!window.__cfRLUnblockHandlers) return false; $('#topup').addClass('is-active');" class="font-medium text-indigo-600 hover:text-indigo-500 cursor-pointer"> Add
+                            balance<span class="sr-only"> Balance available</span></div>
+                            </div>
+                            </div>
+                            </dd>
+                            </div>
+                        <div class="relative box overflow-hidden col-span-2" style="margin-bottom: 1.5rem;">
+                            <dt>
+                                <p class="text-sm font-medium text-gray-500 truncate mb-2">How does your balance work?</p>
+                            </dt>
+                            <div class="text-gray-900">
+                                <p class="text-sm font-medium text-gray-900">
+                                Your balance are pre-paid funds you have available to spend on your mentoring sessions.
+                                </p>
+                                <div [hidden]="showMore" id="read-more-balance-info" class="max-h-0 overflow-hidden">
+                                <p class="text-sm font-medium text-gray-900">
+                                    Your available balance will be used to pay for your mentoring sessions before any other stored payment method is used.
+                                </p>
+                                <p class="text-sm font-medium text-gray-900">
+                                    You can add money to your balance through the top-up function or through an <a href="/teams/">employer</a>.
+                                </p>
+                                <p class="text-sm font-medium text-gray-900">
+                                    Funds added to your balance grant you a non-transferrable license for services on MentorCruise and are therefore non-refundable and expire a year after purchase.
+                                </p>
+                                <div class="cursor-pointer text-mc-blue underline text-sm" style="cursor: pointer" (click)="toggleVisibility()">
+                                    Read less
+                                </div>
+                                </div>
+                                <div id="read-more-link" class="cursor-pointer text-mc-blue underline text-sm" style="cursor: pointer" (click)="toggleVisibility()" [hidden]="!showMore">
+                                Read more
+                                </div>
+                            </div>
+                            </div>
+
+                            <div aria-labelledby="billing-history-heading">
+                                <div class="box mb-8 sm:overflow-hidden">
+                                <div class="px-4 sm:px-6">
+                                <h2 id="billing-history-heading" class="text-lg leading-6 font-medium text-gray-900">Billing
+                                history</h2>
+                                </div>
+                                <div class="mt-6 flex flex-col">
+                                <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                                <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                                <div class="overflow-hidden border-t border-gray-200">
+                                <table class="min-w-full divide-y divide-gray-200">
+                                <thead class="bg-gray-50">
+                                <tr>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Date
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Description
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                Amount
+                                </th>
+                                
+                                <th scope="col" class="relative px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                <span class="sr-only">View receipt</span>
+                                </th>
+                                </tr>
+                                </thead>
+                                <tbody class="bg-white divide-y divide-gray-200">
+                                <tr>
+                                <td><i>No transactions found</i></td>
+                                </tr>
+                                </tbody>
+                                </table>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                            
+                            
+                            
+                    </dl>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>

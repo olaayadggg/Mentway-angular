@@ -9,9 +9,11 @@ import { SignupComponent } from './modules/auth-module/signup/signup.component';
 import { LandingComponent } from './landing/landing.component';
 import { LoginComponent } from './modules/auth-module/login/login.component';
 import { SubscriptionComponent } from './modules/mentor-module/components/subscription/subscription.component';
+import { MyBalanceComponent } from './modules/mentee-module/components/my-balance/my-balance.component';
 
 const routes: Routes =[
     { path: 'mysubscriptions',             component: SubscriptionComponent },
+    { path: 'mybalance',             component: MyBalanceComponent },
     { path: 'home',             component: HomeComponent },
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'register',           component: SignupComponent },
