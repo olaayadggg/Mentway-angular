@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+    font-family: 'Inter UI', sans-serif !important;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+body {
+    font-size: 1rem;
+}
+.button, body {
+    line-height: 1.5;
+}
+body, code, h1, h2, h3, h4, h5 {
+    font-weight: 400;
+}

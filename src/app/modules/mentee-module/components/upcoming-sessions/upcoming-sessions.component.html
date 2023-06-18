@@ -1,1 +1,100 @@
-<p>upcoming-sessions works!</p>
+<div class="container">
+    <div class="booking-summary" style="margin-top: 50px;">
+        <h2 class="title">Booking Summary</h2>
+        <div class="breadcrumbs">
+            <a href="#" class="aa">Home</a> / <a href="#" class="aa">Profile</a> / Booking Summary
+        </div>
+        </div>
+        <div class="row">
+        <div class="col-lg-4 col-md-5 col-sm-5 col-xs-12" id="container">
+            <main class="profile-page">
+            <div class="profile-container">
+                <div class="profile-header d-flex">
+                <div class="profile-image">
+                    <img src="./assets/img/theme/team-4-800x800.jpg" alt="Profile Image" class="rounded-circle profile-picture">
+                </div>
+                <div class="profile-info">
+                    <h2 class="name">Samira Samir</h2>
+                    <p class="job">DevOps Designer</p>
+                    <p class="country">Egypt</p>
+                </div>
+                </div>
+                <div class="profile-links">
+                <a href="#">Booking</a>
+                <a href="#" class="is-active">Upcoming Session</a>
+                <a href="#">Message</a>
+                <a href="#">Reviews</a>
+                <a href="#">Personal Information</a>
+                <a href="#">Wallet</a>
+                </div>
+            </div>
+            </main>
+        </div>
+        <div class="col-lg-7 col-md-9 col-sm-8 col-xs-12">
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Mentor lists</th>
+                        <th>Scheduled Date</th>
+                        <th>Scheduled Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let item of Data">
+                        <td>{{ item.mentor }}</td>
+                        <td>{{ item.scheduledDate1 }}</td>
+                        <td>{{ item.scheduledDate2 }}</td>
+                        <td><button (click)="viewDetails(item)">View</button></td>
+                    </tr> -->
+                        <tr>
+                            <td class="user-cell">
+                                <div class="user-info">
+                                <img src="./assets/img/theme/team-4-800x800.jpg" alt="User Image" class="user-image">
+                                <span class="user-name pl-2">Samira Samir</span>
+                                </div>
+                            </td>
+                            <td>08 April 2020</td>
+                            <td><div class="date">9:00 AM - 10:00 AM</div></td>
+                            <td><button (click)="viewDetails()"><i class="fas fa-eye" style="color: #1FAB89;"><span> View</span></i></button></td>
+                        </tr>
+                        <tr>
+                            <td class="user-cell">
+                            <div class="user-info">
+                                <img src="./assets/img/theme/team-4-800x800.jpg" alt="User Image" class="user-image">
+                                <span class="user-name pl-2">Samira Samir</span>
+                            </div>
+                            </td>
+                        <td>08 April 2020</td>
+                        <td><div class="date">9:00 AM - 10:00 AM</div></td>
+                        <td><button (click)="viewDetails()"><i class="fas fa-eye" style="color: #1FAB89;"><span> View</span></i></button></td>
+                    </tr>
+                    <tr>
+                        <td class="user-cell">
+                        <div class="user-info">
+                            <img src="./assets/img/theme/team-4-800x800.jpg" alt="User Image" class="user-image">
+                            <span class="user-name pl-2">Samira Samir</span>
+                        </div>
+                        </td>
+                    <td>08 April 2020</td>
+                    <td><div class="date">9:00 AM - 10:00 AM</div></td>
+                    <td><button (click)="viewDetails()"><i class="fas fa-eye" style="color: #1FAB89;"><span> View</span></i></button></td>
+                </tr>
+                <tr>
+                    <td class="user-cell">
+                    <div class="user-info">
+                        <img src="./assets/img/theme/team-4-800x800.jpg" alt="User Image" class="user-image">
+                        <span class="user-name pl-2">Samira Samir</span>
+                    </div>
+                    </td>
+                <td>08 April 2020</td>
+                <td><div class="date">9:00 AM - 10:00 AM</div></td>
+                <td><button (click)="viewDetails()"><i class="fas fa-eye" style="color: #1FAB89;"><span> View</span></i></button></td>
+            </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+    </div>
+    

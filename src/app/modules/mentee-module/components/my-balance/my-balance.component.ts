@@ -11,5 +11,10 @@ export class MyBalanceComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  showMore: boolean = true;
+
+  toggleVisibility() {
+    this.showMore = !this.showMore;
+  }
 
 }
