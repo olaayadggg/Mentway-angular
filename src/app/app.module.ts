@@ -20,6 +20,7 @@ import { adminModule } from './modules/admin-module/admin.module';
 import { menteeModule } from './modules/mentee-module/mentee.module';
 import { mentorModule } from './modules/mentor-module/mentor.module';
 import { SessionComponent } from './modules/session-module/components/session/session.component';
+import { RateComponent } from './shared/rate/rate/rate.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { SessionComponent } from './modules/session-module/components/session/se
     FooterComponent,
     LoginComponent,
     SessionComponent,
+    RateComponent,
     
     
     
