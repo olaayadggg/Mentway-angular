@@ -1,7 +1,7 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent headroom headroom--top headroom--pinned">
   <div class="container">
     <a class="navbar-brand mr-lg-5 logo" [routerLink]="['/home']">
-      <img src="./assets/img/brand/logo.svg">
+      <img style="height: 45px; width: 100px;" src="./assets/img/brand/newlogo.svg">
     </a>
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
@@ -12,7 +12,7 @@
         <div class="row">
           <div class="col-6 collapse-brand">
             <a [routerLink]="['/home']">
-              <img src="./assets/img/brand/logo.svg">
+              <img src="./assets/img/brand/newlogo.svg">
             </a>
           </div>
           <div class="col-6 collapse-close">
@@ -28,7 +28,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
-            <span class="nav-link-inner--text">About us</span>
+            <span class="nav-link-inner--text" style="color: black;">About us</span>
           </a>
           
           <!-- <div class="dropdown-menu-xl dropdown-menu" >
@@ -66,7 +66,7 @@
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">
             <i class="ni ni-collection d-lg-none"></i>
-            <span class="nav-link-inner--text">Contact</span>
+            <span class="nav-link-inner--text" style="color: black;">Contact</span>
           </a>
           <!-- <div class="dropdown-menu">
             <a [routerLink]="['/landing']" class="dropdown-item">Landing</a>
@@ -115,7 +115,7 @@
             <span class="nav-link-inner--text">Create account</span>
           </a>
         </li>
-        <li class="nav-item d-none d-lg-block ml-lg-4">
+        <li class="nav-item d-none d-lg-block ml-lg-2">
           <a [routerLink]="['/login']" target="_blank" class="btn login ">
             <span class="nav-link-inner--text">Login</span>
           </a>

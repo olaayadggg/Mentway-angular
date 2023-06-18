@@ -21,6 +21,12 @@ export class MentorService {
   getUserDonations(userid:number):any{
     return this.http.get(`${this.baseUrl}/profile/${userid}/`)
   }
+  rate (id:number,rate:number){
+    return this.http.post(`${this.baseUrl}/rates`,{mentor:id,rate})
+  }
+  rateUpdate(id:number,mentorid: number, rate: number) {
+    return this.http.put(`${this.baseUrl}/rates/${id}`, { mentor: mentorid, rate })
+  }
   
 
 
