@@ -6,12 +6,14 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { ProfileMentorComponent } from "./components/profile-mentor/profile-mentor.component";
 import { EditProfileMentorComponent } from "./components/edit-profile-mentor/edit-profile-mentor.component";
 import { MyBalanceComponent } from "./components/my-balance/my-balance.component";
+import { SubscriptionComponent } from "./components/subscription/subscription.component";
 
 const routes: Routes = [
   {
     path: "mentor",
     canActivate: [],
     children: [
+      { path: 'mysubscriptions', component: SubscriptionComponent },
       { path: "dashboard", component: DashboardComponent },
       { path: "profile-mentor", component: ProfileMentorComponent },
       { path: "edit-profile", component: EditProfileMentorComponent },

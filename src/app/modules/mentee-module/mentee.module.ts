@@ -6,11 +6,13 @@ import { DashboardComponent } from "./components/dashboard/dashboard.component";
 import { EditProfileComponent } from "./components/edit-profile/edit-profile.component";
 import { ProfileMenteeComponent } from "./components/profile-mentee/profile-mentee.component";
 import { MyBalanceComponent } from "./components/my-balance/my-balance.component";
+import { SearchMentorsComponent } from "./components/search-mentors/search-mentors.component";
 const routes: Routes = [
   {
     path: "mentee",
     canActivate: [],
     children: [
+      { path: 'search', component: SearchMentorsComponent },
       { path: "dashboard", component: DashboardComponent },
       { path: "profile-mentee", component: ProfileMenteeComponent },
       { path: "edit-profile", component: EditProfileComponent },

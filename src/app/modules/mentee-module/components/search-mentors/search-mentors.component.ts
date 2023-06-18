@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class SearchMentorsComponent implements OnInit {
 
   constructor() { }
+  mentors: any = [];
+
 
   ngOnInit(): void {
   }
